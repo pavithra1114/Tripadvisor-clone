@@ -1,0 +1,319 @@
+/* ---------------- RESET ---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gabarito", sans-serif;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+  padding: 10px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar__logo img {
+  width: 180px;
+}
+
+.navbar__search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid gray;
+  padding: 8px 15px;
+  border-radius: 30px;
+  max-width: 400px;
+}
+
+.navbar__search input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 15px;
+}
+
+.navbar__menus {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar__menus li {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.navbar__menus li:hover {
+  background: #34e0a1;
+}
+
+.navbar__login {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar__signin a {
+  text-decoration: none;
+  background: black;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+.navbar__menubar {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* ---------------- HOMEPAGE ---------------- */
+.homepage {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.homepage h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+/* tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.tabs li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+.tabs li:hover {
+  background: #34e0a1;
+}
+
+.tabs li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* homepage search */
+.homepage__search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid gray;
+  border-radius: 40px;
+  padding: 10px 20px;
+  width: 650px;
+  max-width: 90%;
+  margin: 20px auto;
+}
+
+.homepage__search input {
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+.homepage__search button {
+  background: #34e0a1;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* ---------------- IMAGE SECTION ---------------- */
+.homepage__image {
+  position: relative;
+  margin: 40px auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img__desc {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  font-size: 25px;
+  width: 100%;
+  color: black;
+  
+}
+
+.img__desc h2 {
+  font-size: 40px;
+  
+}
+
+
+
+/* ---------------- TOUR CARDS ---------------- */
+.tour {
+  padding: 20px 60px;
+}
+
+.tour__desc {
+  margin-top: 5px;
+}
+
+.tour__cards {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tour__card {
+  flex: 1;
+  min-width: 250px;
+  position: relative;
+}
+
+.tour__card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ---------------- ASIAN CARD ---------------- */
+.asian__card {
+  width: 250px;
+  height: 220px;
+  position: relative;
+}
+
+.asian__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.asian__card h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+}
+
+/* ---------------- CAPTION ---------------- */
+.caption {
+  display: flex;
+  align-items: center;
+  background: #00aa6c;
+  padding: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.caption__img img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.caption__desc {
+  color: white;
+}
+
+.caption__desc button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+}
+
+/* ---------------- FOOTER ---------------- */
+.footer {
+  background: black;
+  color: white;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+.footer_1 {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.footer_2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 10px 15px;
+  }
+
+  .navbar__menus,
+  .navbar__login {
+    display: none;
+  }
+
+  .navbar__menubar {
+    display: block;
+  }
+
+  .homepage h1 {
+    font-size: 30px;
+  }
+
+  .tour {
+    padding: 20px;
+  }
+
+  .tour__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .asian__card {
+    width: 100%;
+    height: 200px;
+  }
+
+  .caption {
+    flex-direction: column;
+  }
+
+  .image__search {
+    width: 90%;
+  }
+}

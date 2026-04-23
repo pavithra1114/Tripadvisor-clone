@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripadvisor Clone</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+  
+
+    <!--Font Awesome-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar__menubar">
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+
+
+
+            <div class="navbar__logo">
+                <img src="./images/logo.jpg">
+            </div>
+            <div class="navbar__search">
+
+                <i class="fa-solid fa-magnifying-glass" style="color: rgb(0, 1, 2);"></i>
+                <input type="text" placeholder="where to go">
+
+            </div>
+            <ul class="navbar__menus">
+                <li>Discover</li>
+                <li>Trips</li>
+                <li>Review</li>
+                <li>More</li>
+            </ul>
+            <div class="navbar__login">
+                <i class="fa-solid fa-globe" style="color: rgb(0, 1, 2);"></i>
+                <p>| INR</p>
+
+            </div>
+            <!--Dummy link#-->
+            <div class="navbar__signin">
+                <a href="#">Sign in</a>
+            </div>
+</div>
+        
+        <!--Main section-->
+        <main>
+            <!--Home Page-->
+            <div class="homepage">
+                <h1>Where to?</h1>
+                <ul>
+                    <ul class="nav-icons">
+                        <ul class="tabs">
+                            <li><i class="fa-solid fa-umbrella-beach" style="color: rgb(0, 1, 2);"></i><a
+                                    href="#">Beach</a>
+                            </li>
+                            <li><i class="fa-solid fa-hotel" style="color: rgb(0, 1, 2);"></i><a href="#">Hotels</a>
+                            </li>
+                            <li><i class="fa-solid fa-bars" style="color: rgb(0, 1, 2);"></i><a href="#">Things to
+                                    Do</a>
+                            </li>
+                            <li><i class="fa-solid fa-utensils" style="color: rgb(0, 1, 2);"></i><a
+                                    href="#">Restaurants</a>
+                            </li>
+                        </ul>
+
+                    </ul>
+                    <div class="homepage__search">
+                        <i class="fa-solid fa-magnifying-glass" style="color: rgb(0, 1, 2);"></i>
+                        <input type="text" placeholder="Places to go, Things to do, hotels...">
+                        <button>Search</button>
+                    </div>
+                    <div class="homepage__image">
+                        <div class="img">
+                            <img src="./images/t1.jpg">
+
+                        </div>
+                        <div class="img__desc">
+                            <h2>Book traveller-backed things to do</h2>
+                            
+
+
+                        </div>
+
+                    </div>
+            </div>
+            <!--Tour Place-->
+            <div class="tour">
+                <h2>Ways to Coimbatore</h2>
+                <p class="tour__desc">Book these experiences for a close-up look at Coimbatore</p>
+                <div class="tour__cards">
+                    <div class="tour__card">
+                        <img src="./images/t2.jpg">
+                        <h3>Isha Yoga Centre - Coimbatore</h3>
+                        <p>4.1🟢🟢🟢🟢(30 reviews)</p>
+                        <p>From ₹6,704.30 per adult (price varies by group size)</p>
+
+
+                    </div>
+                    <div class="tour__card">
+                        <img src="./images/t3.jpg">
+                        <h3>Ooty Sightseeing and Toy Train Ride–UNESCO Railway One Day Tour</h3>
+                        <p>4.5🟢🟢🟢🟢(25 reviews)</p>
+                        <p>From ₹16,330.55 per adult (price varies by group size)</p>
+
+
+                    </div>
+                    <div class="tour__card">
+                        <img src="./images/t4.jpg">
+                        <h3>Explore The Gedee Car Museum In Coimbatore With Lunch</h3>
+                        <p>4.3🟢🟢🟢🟢(115 reviews)</p>
+                        <p>From ₹12,450.84 per adult (price varies by group size)</p>
+
+
+                    </div>
+                    <div class="tour__card">
+                        <img src="./images/t5.jpg">
+                        <h3>Marudhamalai Murugan Temple</h3>
+                        <p>5.0🟢🟢🟢🟢🟢(819 reviews)</p>
+                        <p>From ₹18,484.72 per adult (price varies by group size)</p>
+
+
+                    </div>
+
+
+                </div>
+                <h2>Asian Countries</h2>
+                <p class="tour__desc">Rich cultural history</p>
+                <div class="tour__cards">
+                    <div class="asian__card">
+                        <img src="./images/t6.jpg">
+                        <h3>Tokyo,Japan</h3>
+
+                    </div>
+                    <div class="asian__card">
+                        <img src="./images/t7.jpg">
+                        <h3>Bali,Indonesia</h3>
+
+                    </div>
+                    <div class="asian__card">
+                        <img src="./images/t8.jpg">
+                        <h3>Thimphu,Bhutan</h3>
+
+                    </div>
+                    <div class="asian__card">
+                        <img src="./images/t9.jpg">
+                        <h3>singapore</h3>
+
+                    </div>
+                </div>
+
+            </div>
+            <!--Caption-->
+            <div class="caption">
+                <div class="caption__img">
+                    <img src="./images/t10.jpg">
+
+                </div>
+                <div class="caption__desc">
+                    <h3>London</h3>
+                    <p>London's hidden</p>
+                    <p>For more London recs from travellers, locals, and tripadvisor team, check out our hidden gem
+                        guides
+                        to the city.</p>
+                    <button>Read more</button>
+
+                </div>
+
+            </div>
+
+        </main>
+        <!--Trip Section-->
+        <div class="trip">
+            <h2>Dream your next trip</h2>
+            <div class="tour__cards">
+                <div class="asian__card">
+                    <img src="./images/t11.jpg">
+                    <h3>Thanjavur</h3>
+
+                </div>
+                <div class="asian__card">
+                    <img src="./images/t12.jpg">
+                    <h3>Kanyakumari</h3>
+
+                </div>
+                <div class="asian__card">
+                    <img src="./images/t13.jpg">
+                    <h3>Trichy</h3>
+
+                </div>
+                <div class="asian__card">
+                    <img src="./images/t14.jpg">
+                    <h3>Karaikudi</h3>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="footer_1">
+                <div class="footer_1__s1">
+                    <p>About Advisor</p>
+                    <p>About Us</p>
+                    <p>Press</p>
+                    <p>Help & support</p>
+                    <p>Contact us</p>
+
+                </div>
+                <div class="footer_1__s2">
+                    <p>Add a Place</p>
+                    <p>Travel Articles</p>
+                    <p>Explore</p>
+                    <p>Write a Review</p>
+                    <p>Join</p>
+
+                </div>
+
+            </div>
+            <div class="footer_2">
+                <h1>Tripadvisor</h1>
+                <p>&copy; Tripadvisor, Inc</p>
+
+            </div>
+        </div>
+</body>
+
+
+</html>
